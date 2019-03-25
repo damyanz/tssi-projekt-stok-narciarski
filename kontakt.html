@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Damian Zapalski" />
+  <title>Kontakt - Miechów-Ski</title>
+  <script src="http://code.jquery.com/jquery-1.5.js"></script>
+  <script>
+  $(document).ready(function() {
+   var text_max = 1000;
+   $('#textarea_feedback').html(text_max + ' znaków pozostało');
+
+   $('#textarea').keyup(function() {
+       var text_length = $('#textarea').val().length;
+       var text_remaining = text_max - text_length;
+
+       $('#textarea_feedback').html(text_remaining + ' znaków pozostało');
+   });
+});
+ </script>
+  <link rel="icon" type="image/png" href="img/favicon/favicon16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon160.png" sizes="160x160" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon196.png" sizes="196x196" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <header>
+      <div id="logo">
+        <a href="index.html"><img src="img/header/logo/logo.png" alt="logo" /></a>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">STRONA GŁÓWNA</a><span class="kwadrat">&squf;</span></li>
+          <li><a href="#">CENNIK</a><span class="kwadrat">&squf;</span></li>
+          <li><a href="#">KAMERY</a><span class="kwadrat">&squf;</span></li>
+          <li><a href="#">SZKÓŁKA</a><span class="kwadrat">&squf;</span></li>
+          <li><a href="kontakt.html">KONTAKT</a></li>
+        </ul>
+      </div>
+      </header>
+      <div id="main">
+        <div id="dane_kontaktowe">
+          <div class="pasek"><h2>Dane kontaktowe</h2></div>
+          <div class="blok_kontaktowy">
+            <h4>Adres</h4>
+            <h3>Miechów-Ski</h3>
+            <p>ul. Ogrodowa 21</p>
+            <p>34-200 Miechów</p>
+          </div>
+          <div class="blok_kontaktowy">
+            <h4>Biuro</h4>
+            <div class="nr_tel">
+              <a href="tel:666-999-666"><p>666 999 666<br/></p></a><a href="mailto:info@miechowski.pl" target="_top"><p class="email">
+                info&commat;miechowski.pl</p></a>
+            </div>
+          </div>
+          <div class="blok_kontaktowy">
+            <h4>Serwis</h4>
+            <div class="nr_tel">
+              <a href="tel:999-666-999"><p>999 666 999<br/></p></a><a href="mailto:serwis@miechowski.pl" target="_top"><p class="email">
+                serwis&commat;miechowski.pl</p></a>
+            </div>
+          </div>
+          <div class="blok_kontaktowy" id="bklast">
+            <h4>Szkółka</h4>
+            <div class="nr_tel">
+              <a href="tel:666-333-666"><p>666 333 666<br/></p></a><a href="mailto:szkolka@miechowski.pl" target="_top"><p class="email">
+                szkolka&commat;miechowski.pl</p></a>
+            </div>
+          </div>
+        </div>
+        <div id="formularz">
+          <div class="pasek">
+            <h2>Formularz kontaktowy</h2>
+          </div>
+          <form>
+            <input type="text" placeholder="Imię i nazwisko*" required="required"/>
+            <input type="email" placeholder="Adres e-mail*" required="required"/>
+            <input type="tel" placeholder="Numer telefonu*" required="required"/>
+            <input type="text" placeholder="Temat*" required="required"/>
+            <textarea id="textarea" maxlength="1000" required="required" placeholder="Treść*"></textarea>
+            <div id="textarea_feedback"></div>
+            <button>Wyślij</button>
+          </form>
+        </div>
+        <div id="mapa_kontakt">
+          <div class="pasek">
+            <h2>Mapa dojazdu</h2>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.9755622906937!2d20.018891716077047!3d50.34836117946141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4717abc58c50b801%3A0x2e94cdfc761186e1!2sOgrodowa+21%2C+32-200+Miech%C3%B3w!5e0!3m2!1spl!2spl!4v1493415439930"  style="border:0;width:360px; height:470px; frameborder:0;" allowfullscreen></iframe>
+        </div>
+      </div>
+        <div id="stopka_duza">
+          <div class="stopkablok1">
+            <div id="social">
+              <h1>SOCIAL</h1>
+              <a href="#"><img src="img/social/fb.png" class="top" alt="facebook" /><p>&sol;miechowski</p></a>
+              <a href="#"><img src="img/social/twitter.png" class="top" alt="twitter" /><p>&commat;miechowski</p></a>
+              <a href="#"><img src="img/social/insta.png" class="top" alt="instagram" /><p>&num;miechowski</p></a>
+            </div>
+          </div>
+          <div class="stopkablok1 stopkablok2">
+            <div id="kontakt">
+              <h1>KONTAKT</h1>
+              <p><a href="tel:666-999-666">666 999 666</a><br/><a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">info&commat;miechowski.pl</a></p>
+            </div>
+          </div>
+          <div class="stopkablok1 stopkablok2">
+            <div id="adres">
+              <h1>ADRES</h1>
+              <a href="https://goo.gl/maps/towVyDfDasL2"><p>Ogrodowa 21<br/>34-200 Miechów</p></a>
+            </div>
+          </div>
+      </div>
+      <div id="stopka_mala">
+        COPYRIGHT &copy; DAMIAN ZAPALSKI
+      </div>
+    </div>
+</body>
+</html>

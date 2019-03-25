@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@keyframes zmniejsz{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.1)
+  }
+}
+@-webkit-keyframes zmniejsz{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.1)
+  }
+}
+@-moz-keyframes zmniejsz{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.1)
+  }
+}
+@-o-keyframes zmniejsz{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.1)
+  }
+}
+@keyframes sciemnianie{
+  from{
+    background-color:rgba(0,0,0,0);
+  }
+  to{
+    background-color:rgba(0,0,0,0.5);
+  }
+}
+@-webkit-keyframes sciemnianie{
+  from{
+    background-color:rgba(0,0,0,0);
+  }
+  to{
+    background-color:rgba(0,0,0,0.5);
+  }
+}
+@-moz-keyframes sciemnianie{
+  from{
+    background-color:rgba(0,0,0,0);
+  }
+  to{
+    background-color:rgba(0,0,0,0.5);
+  }
+}
+@-o-keyframes sciemnianie{
+  from{
+    background-color:rgba(0,0,0,0);
+  }
+  to{
+    background-color:rgba(0,0,0,0.5);
+  }
+}
+@keyframes menu{
+  from{
+    color:white;
+  }
+  to{
+    color:#e74d3c;
+  }
+}
+@-webkit-keyframes menu{
+  from{
+    color:white;
+  }
+  to{
+    color:#e74d3c;
+  }
+}
+@-moz-keyframes menu{
+  from{
+    color:white;
+  }
+  to{
+    color:#e74d3c;
+  }
+}
+@-o-keyframes menu{
+  from{
+    color:white;
+  }
+  to{
+    color:#e74d3c;
+  }
+}
+@keyframes menu1{
+  from{
+    color:black;
+  }
+  to{
+    color:#e74d3c;
+  }
+}
+@-webkit-keyframes menu1{
+  from{
+    color:black;
+  }
+  to{
+    color:#e74d3c;
+  }
+}
+@-moz-keyframes menu1{
+  from{
+    color:black;
+  }
+  to{
+    color:#e74d3c;
+  }
+}
+@-o-keyframes menu1{
+  from{
+    color:black;
+  }
+  to{
+    color:#e74d3c;
+  }
+}
+@keyframes display{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+@-webkit-keyframes display{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+@-moz-keyframes display{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+@-o-keyframes display{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+@keyframes slider {
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+@-webkit-keyframes slider {
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+@-moz-keyframes slider {
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+@-o-keyframes slider {
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+@keyframes text {
+  from{
+    margin-left:100%;
+  }
+  to{
+    margin-left:-50%;
+  }
+}
+@keyframes button{
+  from{
+    background-color:#e74c3c;
+  }
+  to{
+    background-color: #8a2116;
+  }
+}
+  *{
+    margin:0;
+    padding:0;
+  }
+  @font-face {
+  font-family: myriad;
+  src: url(font/MyriadPro-Bold.otf);
+  font-weight: bold;
+  }
+  body{
+    background-color:white;
+  }
+  #container{
+    position:relative;
+    width:950px;
+    margin:10px auto;
+    font-family:myriad;
+    color:white;
+    animation:display 1200ms;
+    animation-fill-mode: forwards;
+    -webkit-animation:display 1200ms;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation:display 1200ms;
+    -moz-animation-fill-mode: forwards;
+    -o-animation:display 1200ms;
+    -o-animation-fill-mode: forwards;
+  }
+  #logo{
+    float:left;
+    width:270px;
+    height:62px;
+  }
+  #logo:hover{
+    animation: zmniejsz 350ms;
+    animation-fill-mode: forwards;
+    -webkit-animation: zmniejsz 350ms;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: zmniejsz 350ms;
+    -moz-animation-fill-mode: forwards;
+    -o-animation: zmniejsz 350ms;
+    -o-animation-fill-mode: forwards;
+  }
+  #menu{
+    width:630px;
+    height:62px;
+    float:right;
+    margin-top:15px;
+    background-color:#233642;
+    font-size:22px;
+  }
+  ul{
+    list-style-type: none;
+    margin-left:15px;
+  }
+  li{
+    display:inline;
+  }
+  #menu a{
+    text-decoration:none;
+    color:white;
+    display:inline-block;
+    margin-top:19px;
+  }
+  #menu a:hover{
+    animation: menu 350ms;
+    animation-fill-mode: forwards;
+    -webkit-animation: menu 350ms;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: menu 350ms;
+    -moz-animation-fill-mode: forwards;
+    -o-animation: menu 350ms;
+    -o-animation-fill-mode: forwards;
+  }
+  #zaslona{
+    position:absolute;
+    top:441px;
+    left:230px;
+    width:10px;
+    height:231px;
+    background-color:white;
+    z-index:2;
+  }
+  .kwadrat{
+    color:white;
+    margin-left:5px;
+  }
+  #slider{
+    margin-top:30px;
+    height:272px;
+    float:left;
+  }
+  .w3-container,.w3-panel{
+    padding:0.01em 16px;
+  }
+  .w3-section,.w3-code{
+    margin-top:16px!important;
+    margin-bottom:16px!important;
+  }
+  .w3-large{
+    font-size:18px!important;
+  }
+  .w3-text-white,.w3-hover-text-white:hover{
+    color:#fff!important;
+  }
+  .w3-display-bottommiddle{
+    position:absolute;
+    left:50%;
+    bottom:30%;
+    transform:translate(-50%,0%);
+    -ms-transform:translate(-50%,0%);
+  }
+  .w3-left{
+    width:27px;
+    height:54px;
+    float:left!important;
+    margin-left:13px;
+    background-image:url("img/header/slider/switch_lewa.png");
+  }
+  .w3-left:hover{
+    background-image:url("img/header/slider/switch_lewa_hover.png");
+  }
+  .w3-right{
+    width:27px;
+    height:54px;
+    float:right!important;
+    margin-right:13px;
+    background-image:url("img/header/slider/switch_prawa.png");
+  }
+  .w3-right:hover{
+    background-image:url("img/header/slider/switch_prawa_hover.png");
+  }
+  .w3-content{
+    max-width:980px;
+    margin:auto;
+  }
+  .w3-display-container{
+    position:relative;
+  }
+  .w3-badge,.w3-tag{
+    background-color:#000;
+    color:#fff;
+    display:inline-block;
+    padding-left:8px;
+    padding-right:8px;
+    text-align:center;
+  }
+  .w3-badge{
+    border-radius:50%;
+  }
+  #koleczka{
+    position:absolute;
+    left:442px;
+    bottom:6px;
+  }
+  .w3-border{
+    border:1px solid #ccc!important;
+  }
+  .w3-transparent,.w3-hover-none:hover{
+    background-color:#e6e6e6!important;
+  }
+  .w3-white,.w3-hover-white:hover{
+    color:#000!important;
+    background-color:#fff!important;
+  }
+  .mySlides{
+    display:none;
+    animation:slider 1s;
+    -webkit-animation:slider 1s;
+    -moz-animation:slider 1s;
+    -o-animation:slider 1s;
+  }
+  .w3-left, .w3-right, .w3-badge{
+    cursor:pointer;
+  }
+  .w3-badge{
+    height:13px;
+    width:13px;
+    padding:0;
+  }
+  #tekst{
+    float:left;
+    width:950px;
+    height:42px;
+    font-size:36px;
+    background-color:#233642;
+    padding-top:5px;
+  }
+  #tekst p{
+    animation-name: text;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    white-space: nowrap;
+  }
+  .czerwony{
+    margin-top:15px;
+    margin-left:10px;
+    float:left;
+    width:230px;
+    height:230px;
+    background-color:#e74d3c;
+  }
+  #pogoda{
+    margin-left:0;
+  }
+  #inpl-weather-links{
+    display:none;
+  }
+  #godzotw h3{
+    margin-top:24px;
+    font-size:22px;
+    font-weight:normal;
+    text-align:center;
+  }
+  #godziny{
+    margin-top:45px;
+    font-size:24px;
+    float:right;
+    padding-right:15px;
+  }
+  #dni{
+    margin-top:45px;
+    float:left;
+    font-size:24px;
+    padding-left:15px;
+  }
+  #duzy h3, #maly h3{
+    font-size:36px;
+    text-align:center;
+    margin-top:15px;
+  }
+  #mapa{
+    float:left;
+    margin-top:15px;
+  }
+  .czynne{
+    margin-top:35px;
+    margin-left:10px;
+    font-size:28px;
+  }
+  .warunki{
+    font-size:22px;
+    margin-top:15px;
+    margin-left:10px;
+  }
+  .linki{
+    margin-top:15px;
+    width:310px;
+    height:213px;
+    float:left;
+  }
+  #o_nas{
+    background-image:url(img/linki/o_nas.png);
+  }
+  #cennik{
+    background-image:url(img/linki/cennik.png);
+    margin-left:10px;
+    margin-right:10px;
+  }
+  #kamery{
+    background-image:url(img/linki/kamery.png);
+  }
+  #stopka_duza{
+    margin-top:10px;
+    float:left;
+    width:950px;
+    background-color:#233642;
+    height: 141px;
+  }
+  .stopkablok1{
+    float:left;
+    width:310px;
+    height:141px;
+  }
+  #social{
+    width:200px;
+    height:141px;
+  }
+  #stopka_duza h1{
+    font-size:30px;
+    margin-left:16px;
+    margin-top:5px;
+  }
+  #social img{
+    float:left;
+    margin-left:15px;
+    margin-top:1px;
+  }
+  #social p{
+    float:left;
+    font-size:24px;
+    text-decoration: none;
+    display:inline;
+  }
+  #stopka_duza a{
+    text-decoration: none;
+    color:white;
+  }
+  #stopka_duza a:hover{
+    animation:menu 350ms;
+    animation-fill-mode: forwards;
+  }
+  .stopkablok2{
+    margin-left:10px;
+  }
+  #kontakt p{
+    float:left;
+    font-size:24px;
+    text-decoration: none;
+    display:inline;
+    margin-top:17px;
+    margin-left:17px;
+  }
+  #adres p{
+    float:left;
+    font-size:24px;
+    text-decoration: none;
+    display:inline;
+    margin-top:15px;
+    margin-left:17px;
+  }
+  .second{
+    margin-top:1px;
+  }
+  .ciemny{
+    width:310px;
+    height:213px;
+  }
+  .ciemny:hover{
+    animation: sciemnianie 700ms;
+    animation-fill-mode: forwards;
+    -webkit-animation: sciemnianie 700ms;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: sciemnianie 700ms;
+    -moz-animation-fill-mode: forwards;
+    -o-animation: sciemnianie 700ms;
+    -o-animation-fill-mode: forwards;
+  }
+  #stopka_mala{
+    margin-top:10px;
+    margin-bottom:15px;
+    float:left;
+    width:950px;
+    background-color:#e74c3c;
+    height:35px;
+    font-size:18px;
+    text-align: center;
+    padding-top:20px;
+  }
+  #main{
+    margin-top:30px;
+    float:left;
+    width:950px;
+    height:860px;
+    background-color:#233642;
+  }
+  #dane_kontaktowe{
+    background-color:white;
+    margin:40px 40px 15px 40px;
+    width:870px;
+    height:190px;
+    color:black;
+  }
+  #dane_kontaktowe h2{
+    color:white;
+  }
+  #dane_kontaktowe h3{
+    margin:0px 0px 0px 15px;
+    font-size:26px;
+  }
+  #dane_kontaktowe h4{
+    margin:0px 0px 5px 15px;
+    font-size:26px;
+  }
+  #dane_kontaktowe p{
+    font-size:22px;
+    text-decoration: none;
+    display:inline;
+    margin-left:15px;
+  }
+  #dane_kontaktowe a{
+    text-decoration: none;
+    color:black;
+  }
+  #dane_kontaktowe a:hover{
+    animation:menu1 350ms;
+    animation-fill-mode: forwards;
+  }
+  #formularz{
+    float:left;
+    width:430px;
+    height:560px;
+    margin-left:40px;
+    background-color:#ffffff;
+  }
+  .pasek{
+    height:30px;
+    background-color:#e74c3c;
+    margin-bottom:10px;
+    padding:10px 0 10px 0;
+  }
+  .pasek h2{
+    text-align: center;
+  }
+  input, textarea {
+    width: 300px;
+    margin-left:60px;
+    margin-right:60px;
+    height: 42px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 0 20px 0 25px;
+    outline: none;
+  }
+  textarea{
+    height:150px;
+    padding:15px 20px 0 25px;
+    margin-bottom:0px;
+    resize: none;
+  }
+  input:active, input:focus, textarea:active, textarea:focus {
+    border: 1px solid #e74c3c;
+  }
+  button {
+    width: 300px;
+    height: 40px;
+    margin-left:60px;
+    background: #e74c3c;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #8a2116;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+    cursor: pointer;
+  }
+  button:hover {
+    animation: button 350ms;
+    animation-fill-mode: forwards;
+  }
+  #textarea_feedback{
+    color:#ccc;
+    margin-right:60px;
+    float:right;
+    margin-bottom:5px;
+  }
+  #mapa_kontakt{
+    width:430px;
+    height:560px;
+    background-color:#fff;
+    float:right;
+    margin-right:40px;
+  }
+  #mapa_kontakt iframe{
+    margin:0 30px 0 30px;
+  }
+.blok_kontaktowy{
+  width:205px;
+  height:110px;
+  float:left;
+}
+.blok_kontaktowy h4{
+  color:black;
+}
+.nr_tel{
+  margin-top:20px;
+}
+.email{
+  font-size:20px !important;
+}
+#bklast{
+  margin-left:15px;
+}

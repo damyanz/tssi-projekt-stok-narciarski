@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Damian Zapalski" />
+  <title>Miechów-Ski</title>
+  <link rel="icon" type="image/png" href="img/favicon/favicon16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon160.png" sizes="160x160" />
+  <link rel="icon" type="image/png" href="img/favicon/favicon196.png" sizes="196x196" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="zaslona"></div>
+    <header>
+      <div id="logo">
+        <a href="index.html"><img src="img/header/logo/logo.png" alt="logo" /></a>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">STRONA GŁÓWNA</a><span class="kwadrat">&squf;</span></li>
+          <li><a href="#">CENNIK</a><span class="kwadrat">&squf;</span></li>
+          <li><a href="#">KAMERY</a><span class="kwadrat">&squf;</span></li>
+          <li><a href="#">SZKÓŁKA</a><span class="kwadrat">&squf;</span></li>
+          <li><a href="kontakt.html">KONTAKT</a></li>
+        </ul>
+      </div>
+      </header>
+      <div id="slider">
+        <div class=" w3-display-container" style="max-width:950px">
+          <img class="mySlides" src="img/header/slider/slider1.png" style="width:100%" alt="slider1">
+          <img class="mySlides" src="img/header/slider/slider2.png" style="width:100%" alt="slider2">
+          <img class="mySlides" src="img/header/slider/slider3.png" style="width:100%" alt="slider3">
+          <img class="mySlides" src="img/header/slider/slider4.png" style="width:100%" alt="slider4">
+          <img class="mySlides" src="img/header/slider/slider5.png" style="width:100%" alt="slider5">
+          <div class="w3-center  w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+            <div class="w3-left" onclick="plusDivs(-1)"></div>
+            <div class="w3-right" onclick="plusDivs(1)"></div>
+          </div>
+          <div id="koleczka">
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+          </div>
+        </div>
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" w3-white", "");
+          }
+          x[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " w3-white";
+        }
+        </script>
+      </div>
+      <div id="tekst">
+          <p>MIECHÓW-SKI ZAPRASZA</p>
+      </div>
+      <div id="pogoda" class="czerwony">
+        <img src="img/weather_widget.png" alt="widget pogodowy"/>
+      </div>
+      <div id="godzotw" class="czerwony">
+        <h3>GODZINY OTWARCIA</h3>
+          <div id="dni">
+            PN.-PT.:<br/><br/>
+            SOB.-NIEDZ.:
+            <br/>
+        </div>
+        <div id="godziny">
+          9-21<br/><br/>
+          8-21
+          <br/>
+        </div>
+        </div>
+        <div id="duzy" class="czerwony">
+          <h3>KRZESEŁKO</h3>
+          <div class="czynne">
+            CZYNNE
+          </div>
+          <div class="warunki">
+            POKRYWA: 40-80cm <br/>
+            WARUNKI: DOBRE
+          </div>
+        </div>
+        <div id="maly" class="czerwony">
+          <h3>ORCZYK</h3>
+          <div class="czynne">
+            CZYNNY
+          </div>
+          <div class="warunki">
+            POKRYWA: 40-80cm <br/>
+            WARUNKI: B. DOBRE
+          </div>
+        </div>
+        <div id="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.9755622906955!2d20.018891716100576!3d50.348361179461385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4717abc58c50b801%3A0x2e94cdfc761186e1!2sOgrodowa+21%2C+32-200+Miech%C3%B3w!5e0!3m2!1spl!2spl!4v1490134218466" style="width:950px; height:250px; frameborder=0;border:0;" allowfullscreen></iframe>
+        </div>
+        <a href="#"><div class="linki" id="o_nas"><div class="ciemny"></div></div></a>
+        <a href="#"><div class="linki" id="cennik"><div class="ciemny"></div></div></a>
+        <a href="#"><div class="linki" id="kamery"><div class="ciemny"></div></div></a>
+        <div id="stopka_duza">
+          <div class="stopkablok1">
+            <div id="social">
+              <h1>SOCIAL</h1>
+              <a href="#"><img src="img/social/fb.png" class="top" alt="facebook" /><p>&sol;miechowski</p></a>
+              <a href="#"><img src="img/social/twitter.png" class="top" alt="twitter" /><p>&commat;miechowski</p></a>
+              <a href="#"><img src="img/social/insta.png" class="top" alt="instagram" /><p>&num;miechowski</p></a>
+            </div>
+          </div>
+          <div class="stopkablok1 stopkablok2">
+            <div id="kontakt">
+              <h1>KONTAKT</h1>
+              <p><a href="tel:666-999-666">666 999 666</a><br/><a href="mailto:info@miechowski.pl" target="_top">info&commat;miechowski.pl</a></p>
+            </div>
+          </div>
+          <div class="stopkablok1 stopkablok2">
+            <div id="adres">
+              <h1>ADRES</h1>
+              <a href="https://goo.gl/maps/towVyDfDasL2"><p>Ogrodowa 21<br/>34-200 Miechów</p></a>
+            </div>
+          </div>
+      </div>
+      <div id="stopka_mala">
+        COPYRIGHT &copy; DAMIAN ZAPALSKI
+      </div>
+    </div>
+</body>
+</html>
